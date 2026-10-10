@@ -32,11 +32,7 @@
             <div class="hero-image">
                 <img src="images/hero.jpg" alt="Featured photography work">
             </div>
-
-            <div class="scroll-indicator">
-                <span>Scroll to explore</span>
-            </div>
-        </section>
+</section>
 
         <section class="gallery">
             <div class="gallery-header">
@@ -52,7 +48,7 @@
 
             <div class="gallery-scroll-container">
                 <div class="projects-wrapper">
-                    <div class="project" data-index="1">
+                    <div class="project" data-index="1" data-category="branding" role="button" tabindex="0">
                         <div class="project-image">
                             <img src="images/project-1-1.jpg" alt="Mountain Landscapes" class="slideshow-image active"
                                 data-slide="0">
@@ -71,7 +67,7 @@
                         </div>
                     </div>
 
-                    <div class="project" data-index="2">
+                    <div class="project" data-index="2" data-category="illustration" role="button" tabindex="0">
                         <div class="project-image">
                             <img src="images/project-2-1.jpg" alt="Urban Stories" class="slideshow-image active"
                                 data-slide="0">
@@ -90,7 +86,7 @@
                         </div>
                     </div>
 
-                    <div class="project" data-index="3">
+                    <div class="project" data-index="3" data-category="web-design" role="button" tabindex="0">
                         <div class="project-image">
                             <img src="images/project-3-1.jpg" alt="Portrait Series" class="slideshow-image active"
                                 data-slide="0">
@@ -109,7 +105,7 @@
                         </div>
                     </div>
 
-                    <div class="project" data-index="4">
+                    <div class="project" data-index="4" data-category="social-media" role="button" tabindex="0">
                         <div class="project-image">
                             <img src="images/project-4-1.jpg" alt="Ocean Waves" class="slideshow-image active"
                                 data-slide="0">
@@ -124,7 +120,7 @@
                         </div>
                     </div>
 
-                    <div class="project" data-index="5">
+                    <div class="project" data-index="5" data-category="print" role="button" tabindex="0">
                         <div class="project-image">
                             <img src="images/project-5-1.jpg" alt="Architecture" class="slideshow-image active"
                                 data-slide="0">
@@ -139,7 +135,7 @@
                         </div>
                     </div>
 
-                    <div class="project" data-index="6">
+                    <div class="project" data-index="6" data-category="animation" role="button" tabindex="0">
                         <div class="project-image">
                             <img src="images/project-6-1.jpg" alt="Wildlife" class="slideshow-image active"
                                 data-slide="0">
@@ -154,7 +150,7 @@
                         </div>
                     </div>
 
-                    <div class="project" data-index="7">
+                    <div class="project" data-index="7" data-category="posters" role="button" tabindex="0">
                         <div class="project-image">
                             <img src="images/project-7-1.jpg" alt="Street Photography" class="slideshow-image active"
                                 data-slide="0">
@@ -173,7 +169,7 @@
                         </div>
                     </div>
 
-                    <div class="project" data-index="8">
+                    <div class="project" data-index="8" data-category="typography" role="button" tabindex="0">
                         <div class="project-image">
                             <img src="images/project-8-1.jpg" alt="Night Scenes" class="slideshow-image active"
                                 data-slide="0">
@@ -205,6 +201,26 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <div class="modal" id="projectModal" aria-hidden="true">
+        <div class="modal-inner">
+            <button class="modal-close" aria-label="Close">×</button>
+            <button class="modal-nav modal-prev" aria-label="Previous project">‹</button>
+            <button class="modal-nav modal-next" aria-label="Next project">›</button>
+            <div class="modal-header">
+                <p class="modal-counter"><span class="modal-index">01</span> / <span class="modal-total">08</span></p>
+                <h2 class="modal-title"></h2>
+                <p class="modal-subtitle"></p>
+            </div>
+            <div class="modal-grid"></div>
+        </div>
+    </div>
+    </div>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Close">×</button>
+        <img class="lightbox-image" src="" alt="">
+    </div>
+
     <script src="script.js"></script>
 </body>
 
